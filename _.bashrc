@@ -212,7 +212,7 @@ function new_venv(){
         virtualenv --system-site-packages -p $PYENV_ROOT/versions/${pyfull}/bin/python${pyver} --clear /home1/irteam/users/mspark/virtual_
 env/${1}
     fi
-    #source /home1/irteam/users/mspark/virtual_env/${1}/bin/activate
+    source /home1/irteam/users/mspark/virtual_env/${1}/bin/activate
 }
 function venv(){
     virtualenv --system-site-packages -p $PYENV_ROOT/versions/3.8.4/bin/python3.8 $vname --clear /home/mike/virtual_env/${1}
